@@ -3,13 +3,10 @@ namespace LibraryManagement
     public class Bookchild : bookfunctions
     {
         static List<BookManagement> bookList = new List<BookManagement>();
-            
         public int bookId;
         public string bookName;
-        public string bookType;
-                
+        public string bookType;  
         public string updatename;
-
         public string orignalname;
         public void GetBook()
         {
@@ -74,10 +71,8 @@ namespace LibraryManagement
                                             "Book name :{1}\n" +
                                             "Book type :{2} "
                                             , searchId.bookId, searchId.bookName, searchId.bookType);
-                        }
-                                        
-                }
-                        
+                        }                     
+                }          
             }
             else
             {
@@ -139,10 +134,8 @@ namespace LibraryManagement
             {
                 Console.WriteLine("Book id {0} not found", find);
             }
-
         }
-
-
+        
         public void BookList()
         {
             BookManagement book = new BookManagement();
@@ -156,5 +149,3 @@ namespace LibraryManagement
         }   
     }
 }
-        
-
